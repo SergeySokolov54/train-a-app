@@ -1,0 +1,26 @@
+.header {
+    background: #e6e1e1;
+    padding-left: 5%;
+    padding-right: 5%;
+    .indents {
+        display: flex;
+        gap: 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+    .header-button {
+        font-size: 23px;
+        font-weight: 300;
+    }
+}
+
+.welcome-message {
+    padding-top: 7px;
+    margin-left: auto;
+    font-size: 20px;
+    font-weight: 500;
+    color: #3f51b5;
+    display: inline-block;
+    vertical-align: middle;
+    cursor: pointer;
+}

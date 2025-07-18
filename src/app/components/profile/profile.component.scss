@@ -1,0 +1,100 @@
+.container {
+    display: flex;
+    align-items: center;  /* центрирование по горизонтали */
+    justify-content: center;  /* центрирование по вертикали */
+    padding-top: 50px;  /* отступы от краёв */
+}
+.centered-card {
+    width: 50%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+mat-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.content-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    .disc-manager {
+        margin-left: auto;
+    }
+    .btn-change-password {
+        background-color: #027bff;
+        color: white;
+        margin-left: auto;
+        border-radius: 10px;
+    }
+}
+
+.dark-bg {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Просто затемнение */
+    z-index: 10;
+}
+.form-change-pswrd {
+    width: 350px;
+    height: 186px;
+    margin: 200px auto;
+    background-color: #fff;
+    display: flex;
+    gap: 20px;
+
+    .mat-card-header-chnge-pswrd {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .icon-close-chnge-pswrd {
+            transform: translateY(-10px); /* Поднимаем вверх */
+        }
+        .title-change-password {
+            transform: translateX(70px);
+        }
+    }
+
+    mat-card-content {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .container-content-change-pswrd {
+        .input-change-pswrd {
+            border: 1px solid gray; /* Задаем толщину, стиль и цвет */
+            background: white;
+            width: 310px;
+            height: 25px;
+        }
+    }
+
+    .btn-save-new-password {
+        background-color: #027bff;
+        color: white;
+        border-radius: 10px;
+
+    }
+
+}
+input {
+  border: none;
+  background: #f4f3f6;
+}
+.edit-icon {
+    display: flex;
+    justify-content: space-between;
+}
+.btn-logout {
+    background: red;
+    color: white;
+    border-radius: 10px;
+
+}

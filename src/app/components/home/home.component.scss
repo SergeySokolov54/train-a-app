@@ -1,0 +1,63 @@
+.search-module {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Элементы переносятся на новую строку */
+    gap: 20px;
+    padding-top: 50px;
+}
+
+.inputs-search-module {
+    border-radius: 10px;
+    height: 50px;
+    background-color: #f7f6f8;
+    border: 1px solid #e2e2e3;
+    font-size: 15px;
+
+
+    .icon-choose-date {
+        padding-top: 5px;
+    }
+
+    .input-choose-date {
+        background-color: #f7f6f8;
+        border: none;
+
+        font-size: 15px;
+    }
+
+}
+
+.inputs-from-to {
+    padding-left: 30px;
+}
+
+.swap-icon {
+    padding-top: 15px;
+}
+
+.position-elem{
+    display: flex;
+    flex-direction: row-reverse;
+    
+}
+
+
+.swap-icon {
+    color: #027bff;
+    cursor: pointer;
+    user-select: none;
+}
+
+.input-choose-date {
+    outline: none;
+}
+.container-btn-search {
+    padding-top: 5px;
+}
+
+.container-btn-search .btn-search {
+    background-color: #213786;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    width: 100px;
+}

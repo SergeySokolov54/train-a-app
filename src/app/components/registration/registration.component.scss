@@ -1,0 +1,37 @@
+.reg-container {
+  max-width: 400px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  h2 {
+    text-align: center;
+    color: #3f51b5;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  mat-form-field {
+    width: 100%;
+    
+    .mat-input-element {
+      font-size: 16px;
+    }
+  }
+  
+  button[type="submit"] {
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+}
