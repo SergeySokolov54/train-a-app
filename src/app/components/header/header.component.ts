@@ -27,22 +27,10 @@ import { MatButtonModule } from '@angular/material/button';
           <button routerLink="home" mat-button>Home</button>
           <button routerLink="profile" mat-button>Profile</button>
           <button routerLink="orders" mat-button>My orders</button>
-          <button routerLink="home" (click)="signOutAndReset()" mat-button>Sign Out</button>
+          <button routerLink="home" (click)="signOutAndReset()" mat-button>Logout</button>
           <span routerLink="profile" class="welcome-message" *ngIf="userService.currentUser">
             {{ userService.currentUser.name }}
           </span>
-        </div>
-
-        <!-- Админ -->
-        <div class="indents" *ngSwitchCase="'admin'">
-          <span class="welcome-message" *ngIf="userService.currentUser">
-            Welcome, Admin {{ userService.currentUser.name }}
-          </span>
-          <button routerLink="home" mat-button>Home</button>
-          <button routerLink="profile" mat-button>Profile</button>
-          <button routerLink="orders" mat-button>Orders</button>
-          <button routerLink="admin" mat-button>Admin Panel</button>
-          <button (click)="userService.signOut()" mat-button>Sign Out</button>
         </div>
       </div>
     </main>
